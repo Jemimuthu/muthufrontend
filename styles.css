@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #e91e63;
+    margin-bottom: 30px;
+  }
+
+  .option {
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .option.active {
+    border-color: #e91e63;
+    box-shadow: 0 10px 20px rgba(233, 30, 99, 0.2);
+    transform: scale(1.02);
+  }
+
+  .option-header {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .badge {
+    background: #f44336;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+
+  .most-popular-label {
+    background: #e91e63;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border-radius: 20px;
+  }
+
+  .option-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 20px;
+  }
+
+  .option.active .option-content {
+    max-height: 500px;
+    padding-bottom: 20px;
+  }
+
+  .select-row {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  select {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .free-delivery {
+    color: green;
+    margin-bottom: 10px;
+  }
+
+  .add-to-cart {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .old-price {
+    color: #aaa;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 5px;
+  }
